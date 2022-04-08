@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <meta name="description" content="The Home page is going to contain an introduction to the website and a bit more related to what the home page is overall"> 
+    <link rel="stylesheet" href="Style.css">
+</head>
+<nav>
+<hr class="FillWithBlue"style="height:25px">
+
+    <div>
+     <div class="Logo">
+         <a href="Home Page.html">
+             <img src="Images/Website Logo.png" width="100px" height="100px">
+         </a>
+     </div>
+    <div class="NavBox1">
+    <a href="Things To Remember.html"> Things to Remember</a> 
+    </div>
+    <div class="NavBox2">
+    <a href="Home Page.html">Home Page</a>
+    </div>
+    <div class="SearchBar"  >
+        <form class="nosubmit">
+            <input class="nosubmit" type="search" placeholder="Search...">
+          </form>
+    </div>
+    <div class="LoginButton">
+        <a class="Middletext" href="Sign-Up.html">Sign Up</a>
+    </div>
+
+
+    <hr class="GiftingIdeasNavDivider"style="height:1px">
+
+    </div>
+</nav> 
+
+<div class="GiftingIdeasImage">
+    
+
+</div>
+<footer>
+
+    <div class="CenterDiv">
+        <p class="MainDescription"> While Gifting we tend to keep a lot of things in mind. The Culture of a person the things they tend to like and often what they might be offended by. Such examples could be simple such as buying a book rather then a game for a person plays a lot of games. If you do happen to look for such information rather then being on this page you can find such information on the Things to Remember Page. However this page can help you find some new type of gifts to give to your friend that you might not have already considered!
+        </p>
+    </div>
+</footer>
+
+<body>
+    <div class="GiftingIdeasDivider">
+
+<button type="button" class="DropDown__Button">Cooking</button>
+<div class="DropDown__Content">
+    <p>
+        An amazing way of showing your affection and love to someone is through cooking. Cooking can be used in gifting as well, it is not that common since it's not a memorial type of gift so only use it on a small occasion.
+    </p>
+
+
+</div>
+<button type="button" class="DropDown__Button">Cloths</button>
+<div class="DropDown__Content">
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam aut, a ea quod illum velit nam dolorem 
+        architecto maxime mollitia, aspernatur iste! Quas nihil quasi, mollitia distinctio sunt accusantium 
+        minus?
+    </p>
+
+
+</div>
+<button type="button" class="DropDown__Button">Books</button>
+<div class="DropDown__Content">
+    <p>
+        BookWorms, We have heard the term earlier and each one of us know atleast one in our life. If the person you are gifting to happens to be a BookWorm then you have it easy! A book in itself that the person had been wanting to read for a long time can showcase the attention you pay to them and how you care for them!
+    </p>
+
+
+</div>
+<button type="button" class="DropDown__Button">Stationary</button>
+<div class="DropDown__Content">
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam aut, a ea quod illum velit nam dolorem 
+        architecto maxime mollitia, aspernatur iste! Quas nihil quasi, mollitia distinctio sunt accusantium 
+        minus?
+    </p>
+
+
+</div>
+<button type="button" class="DropDown__Button">Love?</button>
+<div class="DropDown__Content">
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam aut, a ea quod illum velit nam dolorem 
+        architecto maxime mollitia, aspernatur iste! Quas nihil quasi, mollitia distinctio sunt accusantium 
+        minus?
+    </p>
+
+
+</div>
+
+</div>
+
+    <script>
+        document.querySelectorAll('.DropDown__Button') .forEach(button => {
+            button.addEventListener('click', () => {
+                const DropDownContent = button.nextElementSibling;
+
+                button.classList.toggle('DropDown__Button--active');
+
+                if (button.classList.contains('DropDown__Button--active')) {
+                    DropDownContent.style.maxHeight = DropDownContent.scrollHeight + 'px';
+                } else {
+                    DropDownContent.style.maxHeight = 0;
+                }
+            })
+        });
+    </script>
+</body>
+</html>
